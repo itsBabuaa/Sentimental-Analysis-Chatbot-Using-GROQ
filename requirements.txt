@@ -1,0 +1,9 @@
+streamlit
+pandas
+datetime
+textblob
+plotly
+langchain
+python-dotenv
+langchain_community
+langchain-groq
