@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Keys
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets["GROQ_API_KEY"] #os.getenv("GROQ_API_KEY")
 
 # Langsmith Tracking (optional)
 
@@ -301,4 +301,5 @@ if st.sidebar.button("Clear Chat History"):
     st.rerun()
 
 st.sidebar.markdown("---")
+
 st.sidebar.caption("Built with ❤️ for emotional wellbeing By itsBabuaa")
